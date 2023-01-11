@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MathRandomGame</string>
+    <string name="hint"><font size = "20">Введите ответ</font></string>
+</resources>
