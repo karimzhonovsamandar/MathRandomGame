@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         checkButton.setOnClickListener {
             if (answerEditText.text.toString() == ""){
-                Toast.makeText(this, "Заполните ячейку", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "  Заполните ячейку", Toast.LENGTH_SHORT).show()
             }
             else{
                 userAnswer = answerEditText.text.toString().toInt()
@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
     fun onCheck(){
         var result = x1 + y1
         if (result == userAnswer){
-            Toast.makeText(this, "Правильно", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Правильно", Toast.LENGTH_LONG).show()
             val intent = Intent(this, AnswerActivity::class.java)
             intent.putExtra("result", result.toString())
             intent.putExtra("resultColor", "#89F40D")
@@ -62,5 +62,6 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("resultColor", "#DD0B0B")
             startActivity(intent)
         }
+
     }
 }
